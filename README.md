@@ -3,7 +3,7 @@
 ### Grupo de Trabalho:
 - Aristóteles Reis de Souza
 - Kleber de Barros Alcanfor
-- Marcelo Amarante
+- Marcelo Amarante Ferreira Gomes (@mafgomes)
 - Toni Patrick Falcão
 
 Este projeto apresenta uma implementação de Chatbot utilizando o IBM Watson Assistant como uma atividade da Pós-graduação em Inteligência Artificial no IESB.
@@ -26,3 +26,5 @@ app
 
 
 Obs: este projeto usou como base o projeto do Professor Rafael Brasileiro (https://github.com/rafaelbr/MovieBot)
+
+Para testar acesse: http://isurvey.cgee.org.br/demo/
