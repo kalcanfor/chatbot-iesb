@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Minhas configfurações
-./config.ini
+config.ini
