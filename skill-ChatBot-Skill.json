@@ -1,0 +1,709 @@
+{
+  "intents": [
+    {
+      "intent": "cancelarParticipacao",
+      "examples": [
+        {
+          "text": "Gostaria de cancelar minha participação na pesquisa"
+        },
+        {
+          "text": "Gostaria de excluir meus dados desta consulta"
+        },
+        {
+          "text": "Não quero mais ser contactado nesta consulta"
+        },
+        {
+          "text": "Não quero ser incomodado"
+        }
+      ],
+      "description": "Cancelar minha participação da pesquisa"
+    },
+    {
+      "intent": "cgee",
+      "examples": [
+        {
+          "text": "O que é CGEE?"
+        },
+        {
+          "text": "Que instituição é o CGEE?"
+        },
+        {
+          "text": "Quem é o Centro de Gestão e Estudos Estratégicos?"
+        }
+      ],
+      "description": "Sobre o CGEE"
+    },
+    {
+      "intent": "despedida",
+      "examples": [
+        {
+          "text": "Adeus"
+        },
+        {
+          "text": "Obrigada"
+        },
+        {
+          "text": "Obrigado"
+        },
+        {
+          "text": "tchau"
+        }
+      ],
+      "description": "Despedida"
+    },
+    {
+      "intent": "lgpd",
+      "examples": [
+        {
+          "text": "Como são tratados meus dados nesta consulta?"
+        },
+        {
+          "text": "Como serão utilizados meus dados pessoais?"
+        },
+        {
+          "text": "Porque preciso informar meu CPF?"
+        },
+        {
+          "text": "Quais são as medidas de seguranças relacionadas à LGPD?"
+        },
+        {
+          "text": "Qual a finalidade do uso dos meus dados nesta consulta?"
+        }
+      ],
+      "description": "Respeito à LGPD"
+    },
+    {
+      "intent": "nao_encontrado",
+      "examples": [
+        {
+          "text": "não encontrado"
+        }
+      ],
+      "description": "Não encontrado no cadastro"
+    },
+    {
+      "intent": "pesquisaEmail",
+      "examples": [],
+      "description": "Pesquisar email"
+    },
+    {
+      "intent": "problema",
+      "examples": [
+        {
+          "text": "Estou com dificuldade"
+        },
+        {
+          "text": "Estou com problema"
+        },
+        {
+          "text": "Me ajude"
+        },
+        {
+          "text": "Não funciona"
+        },
+        {
+          "text": "Preciso de ajuda"
+        }
+      ],
+      "description": "Qual tipo de problema"
+    },
+    {
+      "intent": "problemaCadastro",
+      "examples": [
+        {
+          "text": "cadastramento"
+        },
+        {
+          "text": "Credenciar"
+        },
+        {
+          "text": "Meu cadastro esta com problema"
+        },
+        {
+          "text": "Não consigo me cadastrar"
+        },
+        {
+          "text": "problema no cadastramento"
+        }
+      ],
+      "description": "Problema com cadastro"
+    },
+    {
+      "intent": "problemaEmail",
+      "examples": [
+        {
+          "text": "Não chegou mensagem com link"
+        },
+        {
+          "text": "não recebi o e-mail"
+        },
+        {
+          "text": "não recebi o email"
+        },
+        {
+          "text": "O email não chegou"
+        }
+      ],
+      "description": "Problema em receber email"
+    },
+    {
+      "intent": "problemaLogin",
+      "examples": [
+        {
+          "text": "Estou problema para acessar com meu usuário"
+        },
+        {
+          "text": "login"
+        },
+        {
+          "text": "não consigo fazer login"
+        }
+      ],
+      "description": "Problema com o login"
+    },
+    {
+      "intent": "problemaSenha",
+      "examples": [
+        {
+          "text": "Como faço para criar nova senha?"
+        },
+        {
+          "text": "Esqueci minha senha"
+        },
+        {
+          "text": "não tenho minha senha"
+        }
+      ],
+      "description": "Problemas com a senha"
+    },
+    {
+      "intent": "saudacao",
+      "examples": [
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "Oi, tudo bem?"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "Tudo bem?"
+        }
+      ],
+      "description": "Saudação"
+    },
+    {
+      "intent": "sim",
+      "examples": [
+        {
+          "text": "correto"
+        },
+        {
+          "text": "exato"
+        },
+        {
+          "text": "isso mesmo"
+        },
+        {
+          "text": "perfeitamente"
+        },
+        {
+          "text": "Por favor"
+        },
+        {
+          "text": "sim"
+        }
+      ],
+      "description": "Confirmação"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "problema",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cadastro",
+          "synonyms": [
+            "cadastrar",
+            "credenciamento"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "login",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "senha",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "termo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "kalcanfor@gmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "kleber",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kleber@teste.com.br",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "marcia@uol.com.br",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mcc@gmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ricardo@gmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "telcio@outlook.com",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, sou o assistente virtual iSurvey para te ajudar no processo de credenciamento nesta pesquisa. Como posso ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você está num processo de credenciamento para participar desta pesquisa, caso tenha alguma dificuldade posso te ajudar. Me conte o seu problema: concluir o cadastro, criar senha ou efetuar login."
+              },
+              {
+                "text": "Você está num processo de credenciamento para participar desta pesquisa, caso tenha alguma dificuldade posso te ajudar. Se você já fez seu cadastro e não recebeu o e-mail para gerar sua senha, solicite aqui uma senha provisória."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_10_1634246026671",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "informe seu email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_8_1634741856392",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1634741856412",
+      "previous_sibling": "handler_7_1634741856412"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1634741856392",
+      "context": {
+        "email": "@termo"
+      },
+      "conditions": "@termo",
+      "event_name": "input",
+      "dialog_node": "handler_7_1634741856412"
+    },
+    {
+      "type": "standard",
+      "title": "Despedida",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tchau, obrigado. Agradecemos seu interesse pela nossa consulta."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#despedida",
+      "dialog_node": "node_10_1634246026671",
+      "previous_sibling": "node_2_1634845509361"
+    },
+    {
+      "type": "standard",
+      "title": "Problema no cadastro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe seu e-mail para eu verificar se já está cadastrado na consulta."
+              },
+              {
+                "text": "Vou consultar se você já está cadastrado, informe seu e-mail."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "true",
+      "dialog_node": "node_10_1634425870050",
+      "previous_sibling": "node_9_1634424824555"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cancelamento da sua participação nesta pesquisa"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "email": "<? @email.literal ?>"
+      },
+      "conditions": "#cancelarParticipacao",
+      "dialog_node": "node_10_1634602984313",
+      "previous_sibling": "node_6_1634895947382"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, estou aqui para te ajudar no processo de credenciamento para participar desta pesquisa. Me conte o seu problema, foi para concluir o cadastro, criar senha ou efetuar login?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#saudacao",
+      "dialog_node": "node_1_1634245397654",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Problema na senha",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Use link \"http://isurvey.cgee.org.br/demo/nova_senha\" para cadastrar uma nova. Será necessário ter acesso ao seu e-mail, pois você receberá uma mensagem com as orientações"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1634249761652",
+      "previous_sibling": "node_10_1634425870050"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Este e-mail não está cadastrado"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#nao_encontrado",
+      "dialog_node": "node_2_1634845509361",
+      "previous_sibling": "node_9_1634699576709"
+    },
+    {
+      "type": "standard",
+      "title": "O que é o CGEE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O Centro de Gestão e Estudos Estratégicos - CGEE é uma organização social supervisionada pelo Ministério da Ciência, Tecnologia e Inovação - MCTI que está responsável pela operação desta pesquisa. Para conhecer mais sobre o CGEE visite o nosso site https://www.cgee.org.br ou entre em contato pelo e-mail consultas@cgee.org.br"
+              },
+              {
+                "text": "hdskjfjkhsfdjk"
+              },
+              {
+                "text": "sadhfjkshdfjak"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#cgee",
+      "dialog_node": "node_3_1634841578016",
+      "previous_sibling": "node_1_1634245397654"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1634425870050",
+      "actions": [
+        {
+          "name": "get_pessoa",
+          "type": "client",
+          "parameters": {
+            "email": "<? input.text ?>"
+          },
+          "result_variable": "result"
+        }
+      ],
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "true",
+      "dialog_node": "node_5_1634851486030"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$result"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634851486030",
+      "conditions": "true",
+      "dialog_node": "node_5_1634851704330"
+    },
+    {
+      "type": "standard",
+      "title": "Respeito à LGPD",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para participar desta consulta é necessário fazer identificação do respondente através do e-mail e CPF. Esta identificação é uma garantia de autenticidade da sua colaboração. Vale ressaltar que o uso dos seus dados de identificação estão em conformidade com a Lei Geral de Proteção de Dados. Para maiores informações enviar mensagem para consultas@cgee.org.br"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#lgpd",
+      "dialog_node": "node_6_1634895947382",
+      "previous_sibling": "node_3_1634841578016"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#problema",
+      "dialog_node": "node_9_1634424824555",
+      "previous_sibling": "node_10_1634602984313"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "name": "get_pessoa",
+          "type": "client",
+          "parameters": {
+            "email": "$termo"
+          },
+          "result_variable": "pessoa"
+        }
+      ],
+      "context": {},
+      "conditions": "#problemaEmail",
+      "dialog_node": "node_9_1634699576709",
+      "previous_sibling": "node_2_1634249761652"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vou te ajudar a gerar uma nova senha"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1634424824555",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1634249761652"
+      },
+      "conditions": "@problema:senha",
+      "dialog_node": "response_4_1634840066256",
+      "previous_sibling": "response_9_1634836814751"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vou te ajudar para concluir seu cadastro"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1634424824555",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1634425870050"
+      },
+      "conditions": "@problema:cadastro",
+      "dialog_node": "response_9_1634836814751"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1634699576709",
+      "variable": "$email",
+      "dialog_node": "slot_8_1634741856392"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "ChatBot-Skill",
+  "language": "pt-br",
+  "description": "Skill ChatBot"
+}
