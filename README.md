@@ -1,7 +1,7 @@
 # chatbot-iesb
 
 ### Grupo de Trabalho:
-- Aristóteles Reis de Souza
+- Aristóteles Reis de Souza (@aristoteles77)
 - Kleber de Barros Alcanfor
 - Marcelo Amarante Ferreira Gomes (@mafgomes)
 - Toni Patrick Falcão
